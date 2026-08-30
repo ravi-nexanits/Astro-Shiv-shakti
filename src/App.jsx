@@ -18,6 +18,7 @@ import FinalCTA from './components/FinalCTA.jsx'
 import AdsPolicy from './components/AdsPolicy.jsx'
 import Footer from './components/Footer.jsx'
 import MobileStickyCTA from './components/MobileStickyCTA.jsx'
+import WelcomePopup from './components/WelcomePopup.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsConditions from './pages/TermsConditions.jsx'
 import RefundPolicy from './pages/RefundPolicy.jsx'
@@ -94,6 +95,8 @@ export default function App() {
       </main>
       <Footer />
       <MobileStickyCTA />
+      {route === 'home' && <WelcomePopup />}
+      <div id="google_translate_element" aria-hidden="true" />
     </>
   )
 }

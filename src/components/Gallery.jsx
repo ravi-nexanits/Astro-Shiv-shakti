@@ -1,23 +1,25 @@
 import { useState } from 'react'
 import { X } from 'lucide-react'
+import g1 from '../assets/images/Gallery-image1-1.jpg'
+import g2 from '../assets/images/Gallery-image1-2.jpg'
+import g3 from '../assets/images/Gallery-image1-3.jpg'
+import g4 from '../assets/images/Gallery-image1-4.jpg'
+import g5 from '../assets/images/Gallery-image1-5.jpg'
+import g6 from '../assets/images/Gallery-image1-6.jpg'
+import g7 from '../assets/images/Gallery-image1-7.jpg'
 
-const CATS = ['All', 'Puja', 'Pandit Ji', 'Ujjain', 'Events']
-
-const ITEMS = [
-  { cat: 'Puja', label: 'Havan', emoji: '🔥', span: 'tall' },
-  { cat: 'Ujjain', label: 'Mahakal Darshan', emoji: '🛕', span: 'wide' },
-  { cat: 'Pandit Ji', label: 'Consultation', emoji: '🙏' },
-  { cat: 'Puja', label: 'Puja Setup', emoji: '🪔' },
-  { cat: 'Events', label: 'Special Anushthan', emoji: '🕉️', span: 'tall' },
-  { cat: 'Ujjain', label: 'Ujjain Ghats', emoji: '🌅' },
-  { cat: 'Puja', label: 'Aarti', emoji: '🌟' },
-  { cat: 'Events', label: 'Community Puja', emoji: '🌺' }
+const IMAGES = [
+  { src: g1, span: 'tall' },
+  { src: g2, span: 'wide' },
+  { src: g3 },
+  { src: g4 },
+  { src: g5, span: 'tall' },
+  { src: g6 },
+  { src: g7, span: 'wide' }
 ]
 
 export default function Gallery() {
-  const [active, setActive] = useState('All')
   const [lightbox, setLightbox] = useState(null)
-  const filtered = active === 'All' ? ITEMS : ITEMS.filter((i) => i.cat === active)
 
   return (
     <section className="gallery" id="gallery">
@@ -25,42 +27,30 @@ export default function Gallery() {
         <div className="section-head reveal">
           <span className="eyebrow dark">Gallery</span>
           <h2>Moments &amp; Memories</h2>
-          <p>Glimpses from Puja, Anushthan and consultations. Replace with real project photos.</p>
-        </div>
-        <div className="gallery-tabs reveal">
-          {CATS.map((c) => (
-            <button
-              key={c}
-              className={`gallery-tab ${active === c ? 'active' : ''}`}
-              onClick={() => setActive(c)}
-            >
-              {c}
-            </button>
-          ))}
+          <p>Glimpses from Puja, Anushthan and consultations at Siddhavat Ghat, Ujjain.</p>
         </div>
         <div className="gallery-grid">
-          {filtered.map((it, i) => (
+          {IMAGES.map((it, i) => (
             <div
               key={i}
-              className={`gallery-item reveal ${it.span || ''}`}
+              className={`gallery-item photo ${it.span || ''}`}
               onClick={() => setLightbox(it)}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && setLightbox(it)}
             >
-              <span>{it.emoji}</span>
-              <div className="gallery-caption">{it.label}</div>
+              <img src={it.src} alt="" loading="lazy" />
             </div>
           ))}
         </div>
       </div>
       {lightbox && (
         <div className="lightbox" onClick={() => setLightbox(null)}>
-          <div className="lightbox-inner" onClick={(e) => e.stopPropagation()}>
+          <div className="lightbox-inner photo" onClick={(e) => e.stopPropagation()}>
             <button className="lightbox-close" onClick={() => setLightbox(null)} aria-label="Close">
               <X size={22} />
             </button>
-            <span>{lightbox.emoji}</span>
+            <img src={lightbox.src} alt="" />
           </div>
         </div>
       )}

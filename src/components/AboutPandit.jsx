@@ -1,4 +1,5 @@
 import { Check, ArrowRight } from 'lucide-react'
+import panditImg from '../assets/images/pandit-ji-yashwantji.webp'
 
 const POINTS = [
   'Vedic education from Shri Kayavarneshwar Veda Vidya Peeth, Jhalawar (Rajasthan)',
@@ -11,8 +12,8 @@ export default function AboutPandit() {
   return (
     <section className="about" id="about">
       <div className="container about-inner">
-        <div className="about-portrait reveal" aria-hidden="true">
-          🕉️
+        <div className="about-portrait photo reveal">
+          <img src={panditImg} alt="Pt. Yashwant Vyas — Astro Shiv Shakti Ujjain" />
         </div>
         <div className="reveal">
           <span className="eyebrow">Meet Pandit Ji</span>

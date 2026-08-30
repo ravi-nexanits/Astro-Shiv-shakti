@@ -1,4 +1,5 @@
 import { Phone, MessageCircle, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react'
+import logoImg from '../assets/images/Logo Shiv Shakti.png'
 
 export default function Footer() {
   return (
@@ -6,14 +7,13 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="logo" style={{ marginBottom: 14 }}>
-              <span className="logo-mark">ॐ</span>
-              <span className="logo-text">
-                <span className="logo-title">Astro Shiv Shakti</span>
-                <span className="logo-sub">Ujjain</span>
-              </span>
-            </div>
-            <p>Puja &nbsp;|&nbsp; Jyotish &nbsp;|&nbsp; Adhyatmik Margdarshan</p>
+            <a href="#/" className="logo" style={{ marginBottom: 14 }}>
+              <img
+                src={logoImg}
+                alt="Astro Shiv Shakti Ujjain"
+                className="logo-img is-footer"
+              />
+            </a>
             <p style={{ marginTop: 10 }}>
               Pt. Yashwant Vyas — Siddhavat Ghat, Ujjain. Personalised Vedic guidance
               rooted in Shastranusar Vidhi.
