@@ -34,11 +34,11 @@ export default function Footer() {
           <div>
             <h4>Puja Services</h4>
             <ul className="footer-list">
-              <li><a href="#services">Mangal Dosh / Bhat Puja</a></li>
-              <li><a href="#services">Kaal Sarp Dosh Puja</a></li>
-              <li><a href="#services">Rudrabhishek</a></li>
-              <li><a href="#services">Mahamrityunjay Puja</a></li>
-              <li><a href="#services">Kumbh &amp; Ark Vivah</a></li>
+              <li><a href="/mangal-dosh-puja">Mangal Dosh / Bhat Puja</a></li>
+              <li><a href="/kaal-sarp-dosh-puja">Kaal Sarp Dosh Puja</a></li>
+              <li><a href="/#services">Rudrabhishek</a></li>
+              <li><a href="/#services">Mahamrityunjay Puja</a></li>
+              <li><a href="/#services">Kumbh &amp; Ark Vivah</a></li>
             </ul>
           </div>
 
@@ -67,9 +67,9 @@ export default function Footer() {
         <div className="footer-bottom">
           <div>© {new Date().getFullYear()} Astro Shiv Shakti Ujjain. All rights reserved.</div>
           <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap' }}>
-            <a href="#/privacy">Privacy Policy</a>
-            <a href="#/terms">Terms &amp; Conditions</a>
-            <a href="#/refund">Refund / Cancellation</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-conditions">Terms &amp; Conditions</a>
+            <a href="/refund-cancellation">Refund / Cancellation</a>
           </div>
           <div className="social-list">
             <a href="#" aria-label="Facebook" className="fb"><Facebook size={16} /></a>

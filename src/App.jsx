@@ -22,12 +22,31 @@ import WelcomePopup from './components/WelcomePopup.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import TermsConditions from './pages/TermsConditions.jsx'
 import RefundPolicy from './pages/RefundPolicy.jsx'
+import MangalDoshPuja from './pages/MangalDoshPuja.jsx'
+import KaalSarpDoshPuja from './pages/KaalSarpDoshPuja.jsx'
+import Contact from './pages/Contact.jsx'
+import PujaBooking from './pages/PujaBooking.jsx'
+import ShivShaktiPooja from './pages/ShivShaktiPooja.jsx'
 
 function getRoute() {
+  const path = (window.location.pathname || '/').replace(/\/+$/, '') || '/'
+  if (path === '/mangal-dosh-puja') return 'mangal-dosh-puja'
+  if (path === '/kaal-sarp-dosh-puja') return 'kaal-sarp-dosh-puja'
+  if (path === '/contact') return 'contact'
+  if (path === '/puja-booking') return 'puja-booking'
+  if (path === '/shiv-shakti-pooja') return 'shiv-shakti-pooja'
+  if (path === '/privacy-policy') return 'privacy'
+  if (path === '/terms-conditions') return 'terms'
+  if (path === '/refund-cancellation') return 'refund'
   const h = window.location.hash || ''
   if (h.startsWith('#/privacy')) return 'privacy'
   if (h.startsWith('#/terms')) return 'terms'
   if (h.startsWith('#/refund')) return 'refund'
+  if (h.startsWith('#/mangal-dosh-puja')) return 'mangal-dosh-puja'
+  if (h.startsWith('#/kaal-sarp-dosh-puja')) return 'kaal-sarp-dosh-puja'
+  if (h.startsWith('#/contact')) return 'contact'
+  if (h.startsWith('#/puja-booking')) return 'puja-booking'
+  if (h.startsWith('#/shiv-shakti-pooja')) return 'shiv-shakti-pooja'
   return 'home'
 }
 
@@ -35,12 +54,16 @@ export default function App() {
   const [route, setRoute] = useState(getRoute())
 
   useEffect(() => {
-    const onHash = () => {
+    const onRoute = () => {
       setRoute(getRoute())
       window.scrollTo(0, 0)
     }
-    window.addEventListener('hashchange', onHash)
-    return () => window.removeEventListener('hashchange', onHash)
+    window.addEventListener('hashchange', onRoute)
+    window.addEventListener('popstate', onRoute)
+    return () => {
+      window.removeEventListener('hashchange', onRoute)
+      window.removeEventListener('popstate', onRoute)
+    }
   }, [])
 
   useEffect(() => {
@@ -92,9 +115,14 @@ export default function App() {
         {route === 'privacy' && <PrivacyPolicy />}
         {route === 'terms' && <TermsConditions />}
         {route === 'refund' && <RefundPolicy />}
+        {route === 'mangal-dosh-puja' && <MangalDoshPuja />}
+        {route === 'kaal-sarp-dosh-puja' && <KaalSarpDoshPuja />}
+        {route === 'contact' && <Contact />}
+        {route === 'puja-booking' && <PujaBooking />}
+        {route === 'shiv-shakti-pooja' && <ShivShaktiPooja />}
       </main>
       <Footer />
-      <MobileStickyCTA />
+      {route !== 'contact' && route !== 'puja-booking' && route !== 'shiv-shakti-pooja' && <MobileStickyCTA />}
       {route === 'home' && <WelcomePopup />}
       <div id="google_translate_element" aria-hidden="true" />
     </>

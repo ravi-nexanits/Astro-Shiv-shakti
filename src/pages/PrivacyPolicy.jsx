@@ -1,75 +1,139 @@
-import { ArrowLeft } from 'lucide-react'
+import LegalPage from '../components/LegalPage.jsx'
+
+const LAST_UPDATED = new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
+
+const sections = [
+  {
+    id: 'information-we-collect',
+    title: 'Information We May Collect',
+    content: (
+      <>
+        <p>Depending on how you interact with our website and services, we may receive the following information from you:</p>
+        <ul>
+          <li>Name</li>
+          <li>Phone number</li>
+          <li>Email address</li>
+          <li>Enquiry details</li>
+          <li>Puja or consultation requirements</li>
+          <li>Information voluntarily submitted through website forms</li>
+          <li>Basic website usage information where applicable</li>
+        </ul>
+        <p>We only collect information that is reasonably necessary to respond to your enquiry or provide the service you have requested.</p>
+      </>
+    )
+  },
+  {
+    id: 'how-we-use',
+    title: 'How We Use Information',
+    content: (
+      <>
+        <p>Information may be used for purposes such as:</p>
+        <ul>
+          <li>Responding to enquiries received through the website, phone or WhatsApp</li>
+          <li>Providing requested consultation or service information</li>
+          <li>Processing service requests and Puja arrangements</li>
+          <li>Communicating about enquiries, Muhurat, Samagri or bookings</li>
+          <li>Improving the website experience</li>
+          <li>Maintaining website security</li>
+        </ul>
+      </>
+    )
+  },
+  {
+    id: 'communication-channels',
+    title: 'WhatsApp, Phone & Email Communication',
+    content: (
+      <>
+        <p>When you contact Astro Shiv Shakti Ujjain through phone, WhatsApp or email, the information you share through those channels may be used to respond to your enquiry, discuss your requirement and coordinate the service you have asked about.</p>
+        <p>Please share only the information you are comfortable sharing on those channels.</p>
+      </>
+    )
+  },
+  {
+    id: 'cookies',
+    title: 'Cookies & Website Technologies',
+    content: (
+      <>
+        <p>The website may use cookies or similar technologies where required for functionality, analytics or performance. Most browsers allow you to control or disable cookies through browser settings.</p>
+        <p>Where third-party analytics or preference technologies are used, they help us understand aggregate usage so we can improve the site experience.</p>
+      </>
+    )
+  },
+  {
+    id: 'third-party',
+    title: 'Third-Party Services',
+    content: (
+      <>
+        <p>Where third-party services are used to help operate the website (such as hosting, communication or analytics), any information shared with those services is subject to their own privacy practices.</p>
+        <p>We do not sell or rent personal information for third-party marketing.</p>
+      </>
+    )
+  },
+  {
+    id: 'security',
+    title: 'Data Security',
+    content: (
+      <>
+        <p>We take reasonable measures to protect the information you share with us. However, no method of internet transmission or electronic storage can be guaranteed to be completely secure, and we cannot promise absolute security.</p>
+      </>
+    )
+  },
+  {
+    id: 'retention',
+    title: 'Data Retention',
+    content: (
+      <>
+        <p>Information you share may be retained for as long as reasonably necessary for the relevant enquiry, service, legal or operational purpose. When no longer required, information may be deleted or anonymised.</p>
+      </>
+    )
+  },
+  {
+    id: 'your-choices',
+    title: 'Your Choices',
+    content: (
+      <>
+        <p>You may contact us regarding the personal information you have shared, or to update your communication preferences. Please write to us using the contact details at the bottom of this page.</p>
+      </>
+    )
+  },
+  {
+    id: 'childrens-privacy',
+    title: "Children's Privacy",
+    content: (
+      <>
+        <p>The website is not specifically directed toward children. Users should not submit personal information on behalf of children without appropriate consent from a parent or guardian.</p>
+      </>
+    )
+  },
+  {
+    id: 'updates',
+    title: 'Policy Updates',
+    content: (
+      <>
+        <p>This Privacy Policy may be updated from time to time. Continued use of the website after updates are posted indicates acceptance of the revised policy.</p>
+      </>
+    )
+  }
+]
 
 export default function PrivacyPolicy() {
   return (
-    <section className="page">
-      <div className="container">
-        <div className="page-inner">
-          <a href="#/" className="page-back"><ArrowLeft size={14} /> Back to Home</a>
-          <span className="eyebrow">Legal</span>
-          <h1>Privacy Policy</h1>
-          <p className="updated">Last updated: {new Date().getFullYear()}</p>
-
-          <p>
-            Astro Shiv Shakti Ujjain (“we”, “us”, “our”) respects your privacy. This
-            policy explains what information we collect when you consult with Pt. Yashwant
-            Vyas, book a Puja or use our website, and how that information is handled.
-          </p>
-
-          <h2>Information We Collect</h2>
-          <ul>
-            <li>Contact details: name, phone number, WhatsApp number and email address.</li>
-            <li>Consultation details: date, time and place of birth (for Kundli / Jyotish), and the concern you wish to discuss.</li>
-            <li>Booking details: Puja selected, address (if applicable) and payment reference for confirmation only.</li>
-            <li>Website usage data: basic analytics such as pages visited, device type and referrer, collected via standard cookies and third-party analytics.</li>
-          </ul>
-
-          <h2>How We Use Your Information</h2>
-          <ul>
-            <li>To respond to your enquiry and provide personal consultation.</li>
-            <li>To perform the Puja or Anushthan you have requested and share the relevant details (Muhurat, Samagri, Vidhi).</li>
-            <li>To send booking confirmations, updates and follow-up communication.</li>
-            <li>To improve the website and our services.</li>
-          </ul>
-
-          <h2>Sharing of Information</h2>
-          <p>
-            We do not sell or rent your personal information. Details may be shared only with:
-          </p>
-          <ul>
-            <li>Payment gateways or service providers strictly to process a transaction.</li>
-            <li>Government or legal authorities when required by law.</li>
-          </ul>
-
-          <h2>Confidentiality</h2>
-          <p>
-            Personal, family and spiritual concerns shared with Pandit Ji are handled with
-            respect and discretion. Consultations are treated as private conversations.
-          </p>
-
-          <h2>Cookies &amp; Analytics</h2>
-          <p>
-            The website may use cookies and third-party analytics (such as Google Analytics,
-            Meta Pixel) to understand aggregate site usage and improve the experience. You
-            can disable cookies from your browser settings.
-          </p>
-
-          <h2>Your Rights</h2>
-          <ul>
-            <li>Request access to the information we hold about you.</li>
-            <li>Ask us to correct or delete your information.</li>
-            <li>Withdraw consent for further communication at any time.</li>
-          </ul>
-
-          <h2>Contact</h2>
-          <p>
-            For any privacy-related question or request, write to{' '}
-            <a href="mailto:support@astroshivshaktiujjain.com">support@astroshivshaktiujjain.com</a>{' '}
-            or call <a href="tel:+919244300875">+91 92443 00875</a>. Address: Siddhavat
-            Ghat, Ganesh Nagar, Ujjain, Madhya Pradesh – 456003.
-          </p>
-        </div>
-      </div>
-    </section>
+    <LegalPage
+      title="Privacy Policy"
+      description="How Astro Shiv Shakti Ujjain handles the information you share when you enquire about a Puja, consultation or spiritual guidance."
+      seoTitle="Privacy Policy | Astro Shiv Shakti Ujjain"
+      seoDescription="Astro Shiv Shakti Ujjain Privacy Policy — what information we may collect, how it is used and the choices available to you."
+      canonicalPath="/privacy-policy"
+      lastUpdated={LAST_UPDATED}
+      intro={
+        <p>
+          At Astro Shiv Shakti Ujjain, we respect your privacy and are committed to
+          handling your personal information responsibly. This Privacy Policy explains
+          what information may be collected when you interact with our website and
+          services, how it may be used, and the choices available to you.
+        </p>
+      }
+      sections={sections}
+    />
   )
 }

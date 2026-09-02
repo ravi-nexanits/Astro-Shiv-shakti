@@ -65,9 +65,9 @@ export default function AdsPolicy() {
               </p>
               <p>
                 Your data is never sold, rented or shared for third-party marketing.
-                Read our <a href="#/privacy">Privacy Policy</a>,{' '}
-                <a href="#/terms">Terms &amp; Conditions</a> and{' '}
-                <a href="#/refund">Refund / Cancellation Policy</a> for full details.
+                Read our <a href="/privacy-policy">Privacy Policy</a>,{' '}
+                <a href="/terms-conditions">Terms &amp; Conditions</a> and{' '}
+                <a href="/refund-cancellation">Refund / Cancellation Policy</a> for full details.
               </p>
             </div>
           </div>
