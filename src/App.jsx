@@ -91,7 +91,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <main>
+      <main key={route} className="page-anim">
         {route === 'home' && (
           <>
             <Hero />
