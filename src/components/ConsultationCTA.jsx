@@ -8,9 +8,9 @@ export default function ConsultationCTA() {
           <span className="eyebrow">Speak With Pandit Ji</span>
           <h2>Pehle Baat Karein,<br />Phir Puja Karwayein.</h2>
           <p>
-            Whether your concern is Mangal Dosh, Kaal Sarp, marriage, career, family or
-            spiritual guidance — speak directly with Pt. Yashwant Vyas and understand your
-            situation before taking the next step.
+            Whether you're exploring traditional Mangal Dosh Puja, Kaal Sarp Puja,
+            Vedic Jyotish or Adhyatmik Margdarshan — speak directly with Pt. Yashwant
+            Vyas to explore appropriate traditional practices.
           </p>
           <div className="btns">
             <a href="tel:+919244300875" className="btn btn-primary">

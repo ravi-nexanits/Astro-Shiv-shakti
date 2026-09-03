@@ -1,6 +1,6 @@
 const STEPS = [
   { n: '01', title: 'Baat Karein', text: 'Call or WhatsApp Pandit Ji and explain your concern.' },
-  { n: '02', title: 'Samjhein', text: 'Pandit Ji understands the situation and guides you regarding the appropriate Puja or remedy.' },
+  { n: '02', title: 'Samjhein', text: 'Pandit Ji understands the situation and guides you regarding the appropriate traditional Vedic practice.' },
   { n: '03', title: 'Tayyari', text: 'Muhurat, Samagri, Vidhi and process are explained clearly before the Puja.' },
   { n: '04', title: 'Puja Sampann', text: 'Puja is performed as per traditional procedure — participation is also possible via video call.' }
 ]

@@ -4,7 +4,7 @@ import panditImg from '../assets/images/pandit-ji-yashwantji.webp'
 const POINTS = [
   'Vedic education from Shri Kayavarneshwar Veda Vidya Peeth, Jhalawar (Rajasthan)',
   'Jyotish & Vastu Shastra studies at Sandipani Pratishthan, Ujjain',
-  'Practices Vedic Karmakand, Falit Jyotish, Vastu and Dosh Nivaran Puja',
+  'Practices Vedic Karmakand, Falit Jyotish, Vastu Shastra and Traditional Anushthan Pujas',
   'Based at Siddhavat Ghat, Ujjain — offers personal spiritual guidance'
 ]
 

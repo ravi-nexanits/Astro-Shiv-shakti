@@ -128,9 +128,9 @@ function Hero() {
             Traditional Vedic guidance, Naag Pujan, mantra jaap and havan with personal consultation.
           </p>
           <p className="mdp-lead">
-            If you are considering Kaal Sarp Dosh Puja, first speak with Pandit Ji to
-            understand your concern and the appropriate traditional ritual based on your
-            requirements.
+            Learn about the traditional Vedic Puja associated with Kaal Sarp Dosh. Speak
+            with Pandit Ji to understand your Kundli and explore appropriate traditional
+            practices as per Shastranusar Vidhi.
           </p>
           <div className="hero-ctas">
             <CallBtn />
@@ -209,8 +209,8 @@ function WhatIs() {
           </p>
           <p>
             Different astrologers and traditions may interpret this configuration
-            differently. A proper horoscope assessment can help determine whether a
-            traditional remedy is considered appropriate for the individual.
+            differently. A personal Kundli reading with a Vedic practitioner can help
+            explore whether a traditional Puja is considered appropriate.
           </p>
           <p>
             The recommended first step is a personal consultation with Pandit Ji, so your
@@ -233,8 +233,8 @@ function WhenConsider() {
     {
       n: '02',
       icon: HandHeart,
-      title: 'Repeated Concerns',
-      text: 'Discussing recurring personal or professional concerns through the lens of traditional astrology.'
+      title: 'Vedic Astrology Guidance',
+      text: 'Exploring your Kundli and Rahu-Ketu placement through the lens of traditional Vedic astrology.'
     },
     {
       n: '03',
@@ -394,7 +394,7 @@ function AboutPandit() {
             <li><Flame size={18} /><span>Vedic Karmakand &amp; complex Anushthan</span></li>
             <li><ScrollText size={18} /><span>Falit Jyotish</span></li>
             <li><Landmark size={18} /><span>Vastu Shastra</span></li>
-            <li><Sparkles size={18} /><span>Dosh Nivaran Puja</span></li>
+            <li><Sparkles size={18} /><span>Traditional Anushthan Pujas</span></li>
             <li><HandHeart size={18} /><span>Personal Spiritual Guidance</span></li>
           </ul>
           <h3 className="ksp-sub-h">Education</h3>

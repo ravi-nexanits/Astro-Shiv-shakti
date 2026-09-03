@@ -44,7 +44,7 @@ function useSeo() {
     }
     meta.setAttribute(
       'content',
-      'Consult Pandit Ji for Mangal Dosh Puja in Ujjain. Understand your Kundli, traditional Puja Vidhi and booking process. Call or WhatsApp for guidance.'
+      'Learn about traditional Mangal Dosh Puja in Ujjain. Explore Vedic astrology guidance, Kundli analysis and Shastranusar Vidhi with Pandit Ji.'
     )
 
     let canonical = document.querySelector('link[rel="canonical"]')
@@ -74,9 +74,9 @@ function Hero() {
           <h1>Mangal Dosh Puja in Ujjain</h1>
           <p className="mdp-hero-sub">Traditional Vedic Puja &amp; Personal Guidance by Pandit Ji</p>
           <p className="mdp-lead">
-            If you have concerns related to Mangal Dosh or Manglik considerations, speak
-            with Pandit Ji first to understand your Kundli and the appropriate traditional
-            Puja process.
+            Learn about the traditional Vedic Puja associated with Mangal Dosh. Speak
+            with Pandit Ji to understand your Kundli and explore appropriate traditional
+            practices as per Shastranusar Vidhi.
           </p>
           <div className="hero-ctas">{CTA_CALL}{CTA_WA}</div>
           <ul className="mdp-hero-checks">
@@ -128,8 +128,8 @@ function WhatIs() {
             According to traditional Vedic astrology, <strong>Mangal Dosh</strong>
             (also called Manglik Dosh) refers to a specific placement or influence of the
             planet Mars (Mangal) in a person's birth chart (Kundli). It is considered
-            when Mars sits in particular houses, and is traditionally discussed in the
-            context of marriage compatibility, family harmony and personal well-being.
+            when Mars sits in particular houses, and is traditionally discussed as part
+            of Kundli analysis and Vedic astrology guidance.
           </p>
           <p>
             <strong>Mangal Dosh Puja</strong> is a traditional Vedic Anushthan performed
@@ -149,9 +149,9 @@ function WhatIs() {
 
 function WhoConsider() {
   const points = [
-    'People whose Kundli is identified as having Mangal Dosh according to traditional astrology',
-    'People seeking traditional guidance before marriage or Kundli Milan',
-    'Families looking for a traditional Mangal-related Anushthan',
+    'People whose Kundli is identified with a Mangal Dosh placement in traditional astrology',
+    'People seeking traditional Vedic astrology guidance or Kundli Milan',
+    'Families exploring a traditional Mangal-related Vedic Anushthan',
     'People who want to understand whether this Puja is appropriate for their Kundli'
   ]
   return (
@@ -233,7 +233,7 @@ function AboutPanditJi() {
           <ul className="mdp-icon-list">
             <li><BookOpen size={18} /><span>Vedic education from Shri Kayavarneshwar Veda Vidya Peeth, Jhalawar</span></li>
             <li><ScrollText size={18} /><span>Jyotish &amp; Vastu Shastra studies at Sandipani Pratishthan, Ujjain</span></li>
-            <li><Flame size={18} /><span>Practices Vedic Karmakand, Falit Jyotish, Vastu and Dosh Nivaran Puja</span></li>
+            <li><Flame size={18} /><span>Practices Vedic Karmakand, Falit Jyotish, Vastu Shastra and Traditional Anushthan Pujas</span></li>
           </ul>
           <blockquote className="mdp-quote">
             <em>Pehle sunte hain, samajhte hain, phir sahi raasta batate hain.</em>
@@ -323,7 +323,7 @@ function WhenPerformed() {
           </p>
           <ul>
             <li>When your Kundli indicates a Mangal Dosh placement per traditional astrology.</li>
-            <li>Before or during marriage-related decisions and Kundli Milan.</li>
+            <li>During Kundli Milan or a consultation with a Vedic practitioner.</li>
             <li>On a traditional Muhurat suggested by Pandit Ji after reviewing your Kundli.</li>
             <li><strong>Tuesday (Mangalvar)</strong> is traditionally considered significant for Mangal-related Puja, but the exact date is chosen based on the individual's Kundli and available Muhurat.</li>
           </ul>
@@ -493,8 +493,8 @@ function Testimonials() {
 }
 
 const FAQS = [
-  { q: 'What is Mangal Dosh according to Vedic astrology?', a: 'According to traditional Vedic astrology, Mangal Dosh (Manglik Dosh) refers to a specific placement of the planet Mars in a person\'s birth chart. It is traditionally discussed in the context of marriage and Kundli Milan. Its relevance to any individual is confirmed through a personal Kundli reading.' },
-  { q: 'Who should consider Mangal Dosh Puja?', a: 'People whose Kundli is identified as having Mangal Dosh, or those seeking traditional guidance before marriage decisions. Whether this Puja is right for you is decided after Kundli analysis with Pandit Ji.' },
+  { q: 'What is Mangal Dosh according to Vedic astrology?', a: 'According to traditional Vedic astrology, Mangal Dosh (Manglik Dosh) refers to a specific placement of the planet Mars in a person\'s birth chart. It is traditionally discussed as part of Kundli analysis. Its relevance to any individual is discussed during a personal Kundli reading with a Vedic practitioner.' },
+  { q: 'Who should consider Mangal Dosh Puja?', a: 'People whose Kundli is identified with a Mangal Dosh placement in traditional astrology, or those seeking traditional Vedic astrology guidance. Whether this Puja is appropriate for you is discussed after Kundli analysis with Pandit Ji.' },
   { q: 'Is Kundli required before booking?', a: 'Yes — a Kundli reading is recommended first. To prepare an accurate Kundli, Pandit Ji needs your date of birth, exact time of birth and place of birth.' },
   { q: 'Can I speak with Pandit Ji before booking?', a: 'Yes. In fact, this is encouraged. Call or WhatsApp Pandit Ji, share your concern, and only proceed with a Puja if it feels appropriate for your situation.' },
   { q: 'Can Mangal Dosh Puja be arranged in Ujjain?', a: 'Yes. Puja is performed at Siddhavat Ghat, Ujjain, following Shastranusar Vidhi.' },

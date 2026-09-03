@@ -4,7 +4,7 @@ import { ChevronDown } from 'lucide-react'
 const FAQS = [
   { q: 'Can I speak directly with Pandit Ji?', a: 'Yes. You can reach Pt. Yashwant Vyas directly by phone or WhatsApp at +91 92443 00875 to discuss your concern.' },
   { q: 'What details are required for a Kundli consultation?', a: 'Typically your date of birth, exact time of birth and place of birth are required to prepare an accurate Janam Kundli.' },
-  { q: 'Can I consult Pandit Ji before booking a Puja?', a: 'Yes — a consultation is encouraged first. Pandit Ji understands the situation and then guides you regarding the appropriate Puja or remedy.' },
+  { q: 'Can I consult Pandit Ji before booking a Puja?', a: 'Yes — a consultation is encouraged first. Pandit Ji understands the situation and then guides you regarding the appropriate traditional Vedic practice.' },
   { q: 'Is online consultation available?', a: 'Yes. Jyotish consultations are available over phone or video call, and Puja can be arranged in Ujjain with video-call participation.' },
   { q: 'How does Puja booking work?', a: 'After Baat Karein → Samjhein, Pandit Ji explains Muhurat, Samagri and Vidhi. The Puja is then performed according to traditional procedure.' },
   { q: 'How much time is required for a Puja?', a: 'The duration depends on the type of Puja. Some are completed within a few hours, while larger Anushthans may span multiple days.' },

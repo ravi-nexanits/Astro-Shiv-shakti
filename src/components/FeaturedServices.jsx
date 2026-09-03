@@ -6,18 +6,18 @@ import rudraImg from '../assets/images/Rudrabhishek Puja 1.png'
 const FEATURED = [
   {
     img: mangalImg,
-    title: 'Mangal Dosh / Bhat Puja',
-    desc: 'Traditional ritual associated with Mangal Dosh and marriage-related concerns, performed according to Shastranusar Vidhi.'
+    title: 'Traditional Mangal Dosh Puja',
+    desc: 'Traditional Vedic Puja performed as per Shastranusar Vidhi. Consult a Vedic practitioner for personal guidance based on your Kundli.'
   },
   {
     img: kaalSarpImg,
-    title: 'Kaal Sarp Dosh Puja',
-    desc: 'Traditional Naag Pujan, mantra jaap and havan associated with Kaal Sarp Dosh, guided personally by Pandit Ji.'
+    title: 'Traditional Kaal Sarp Dosh Puja',
+    desc: 'Traditional Naag Pujan, mantra jaap and havan performed as per Shastranusar Vidhi, in the sacred city of Ujjain.'
   },
   {
     img: rudraImg,
     title: 'Rudrabhishek',
-    desc: 'Shiva Abhishek with Rudri / Rudrashtadhyayi mantra recitation and traditional offerings, in the sacred city of Ujjain.'
+    desc: 'Traditional Shiva Abhishek with Rudri / Rudrashtadhyayi mantra recitation and devotional offerings, performed as per Vedic tradition.'
   }
 ]
 

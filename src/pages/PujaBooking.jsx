@@ -25,7 +25,7 @@ const WHATSAPP = 'https://wa.me/919244300875'
 
 const CATEGORIES = [
   { id: 'all', label: 'All Pujas' },
-  { id: 'home', label: 'Home Well-Being & Prosperity', icon: Home },
+  { id: 'home', label: 'Traditional Home Pujas', icon: Home },
   { id: 'ganesh', label: 'Shree Ganesh Pujas', icon: Sparkles },
   { id: 'sanskar', label: 'Sanskar Pujas', icon: Baby },
   { id: 'bagalamukhi', label: 'Maa Bagalamukhi Pujas', icon: HandHeart },
@@ -33,7 +33,7 @@ const CATEGORIES = [
 ]
 
 const PUJAS = [
-  // 01 — Home Well-Being & Prosperity
+  // 01 — Traditional Home Pujas
   { id: 'satyanarayan', category: 'home', name: 'Satyanarayan Puja', img: g3, desc: 'Traditional Puja performed as a devotional ceremony for the home and family.' },
   { id: 'griha-shanti', category: 'home', name: 'Griha Shanti & Vastu Shanti Puja', img: siddhavatImg, desc: 'Traditional rituals performed for spiritual harmony and auspiciousness within the home.' },
   { id: 'mahamrityunjaya', category: 'home', name: 'Maha Mrityunjaya Jaap', img: rudraImg, desc: 'Traditional recitation of the Mahamrityunjaya Mantra as part of a Shiva-focused spiritual practice.' },
@@ -54,9 +54,9 @@ const PUJAS = [
   { id: 'vivaha', category: 'sanskar', name: 'Vivaha Sanskar', img: g3, desc: 'Traditional Hindu marriage ceremony performed according to the appropriate rituals and family requirements.' },
 
   // 04 — Maa Bagalamukhi Pujas
-  { id: 'shatru-vinash', category: 'bagalamukhi', name: 'Shatru Vinash & Legal Victory Puja', img: kaalSarpImg, desc: 'Traditional Maa Bagalamukhi worship sought for spiritual support during challenging disputes and legal situations.' },
-  { id: 'nazar-dosha', category: 'bagalamukhi', name: 'Nazar Dosha & Tantra Badha Nivaran', img: g5, desc: 'Traditional spiritual rituals associated with protection and removal of perceived negative influences.' },
-  { id: 'mirchi-havan', category: 'bagalamukhi', name: 'Mantra Jaap & Mirchi Havan', img: g1, desc: 'Traditional Maa Bagalamukhi mantra recitation and fire ritual.' },
+  { id: 'shatru-vinash', category: 'bagalamukhi', name: 'Maa Bagalamukhi Traditional Anushthan', img: kaalSarpImg, desc: 'Traditional Maa Bagalamukhi Vedic Puja performed as per Shastranusar Vidhi. Consult a Vedic practitioner for personal guidance.' },
+  { id: 'nazar-dosha', category: 'bagalamukhi', name: 'Traditional Nazar Dosh Puja', img: g5, desc: 'Traditional Vedic Puja performed according to Shastranusar practice. Explore appropriate traditional guidance with Pandit Ji.' },
+  { id: 'mirchi-havan', category: 'bagalamukhi', name: 'Mantra Jaap & Mirchi Havan', img: g1, desc: 'Traditional Maa Bagalamukhi mantra recitation and fire ritual as per Vedic tradition.' },
 
   // 05 — Shakti Havans
   { id: 'navchandi', category: 'shakti', name: 'Navchandi / Durga Havan', img: mangalImg, desc: 'Traditional Shakti Havan dedicated to Maa Durga and divine feminine energy.' },
@@ -83,7 +83,7 @@ function useSeo() {
     }
     meta.setAttribute(
       'content',
-      'Choose from 21 traditional Pujas — Home Well-Being, Ganesh, Sanskar, Bagalamukhi and Shakti Havans. Enquire online or request an offline Puja at home with Astro Shiv Shakti Ujjain.'
+      'Choose from 21 traditional Vedic Pujas — Home Pujas, Ganesh, Sanskar, Bagalamukhi and Shakti Havans. Enquire online or request an offline Puja at home with Astro Shiv Shakti Ujjain.'
     )
 
     let canonical = document.querySelector('link[rel="canonical"]')
