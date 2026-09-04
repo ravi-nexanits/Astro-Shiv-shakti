@@ -66,6 +66,18 @@ export default function App() {
     }
   }, [])
 
+  // GTM: push a virtual page-view every time the SPA route changes.
+  // The initial gtm.js load fires the first page-view; this handles subsequent nav.
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      event: 'route_change',
+      page_path: window.location.pathname + window.location.hash,
+      page_title: document.title,
+      page_route: route
+    })
+  }, [route])
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
